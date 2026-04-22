@@ -1,19 +1,23 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Hero from "@/components/sections/Hero";
+import Problem from "@/components/sections/Problem";
+import Services from "@/components/sections/Services";
+import Process from "@/components/sections/Process";
+import Why from "@/components/sections/WhyMe";
+import CTA from "@/components/sections/CTA";
 
 export default function HomePage() {
   return (
     <>
       <Navbar />
       <main>
-        <section className="placeholder-section">
-          <div className="container">
-            <h1>Mehr Anfragen durch bessere Websites.</h1>
-            <p>
-              Hier bauen wir im nächsten Schritt deine Hero Section sauber ein.
-            </p>
-          </div>
-        </section>
+        <Hero />
+        <Problem />
+        <Services />
+        <Process />
+        <Why />
+        <CTA />
       </main>
       <Footer />
     </>
