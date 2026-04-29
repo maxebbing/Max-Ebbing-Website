@@ -546,6 +546,18 @@ img {
   margin-top: 8px;
 }
 
+.form-success {
+  margin: 0;
+  color: #15803d;
+  line-height: 1.6;
+}
+
+.form-error {
+  margin: 0;
+  color: #b91c1c;
+  line-height: 1.6;
+}
+
 /* Legal */
 
 .legal {
