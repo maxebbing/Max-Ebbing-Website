@@ -1,0 +1,30 @@
+.siteFooter {
+  padding: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.footerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footerInner p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.footerLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.footerLinks a {
+  color: var(--muted);
+}
+
+.footerLinks a:hover {
+  color: var(--text);
+}

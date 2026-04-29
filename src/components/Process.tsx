@@ -1,3 +1,5 @@
+import styles from "./css/Process.module.css";
+
 const steps = [
   {
     number: "01",
@@ -23,7 +25,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="section section-process" id="prozess">
+    <section className="section snap-section" id="prozess">
       <div className="container">
         <div className="section-heading-simple">
           <p className="section-eyebrow">Prozess</p>
@@ -34,10 +36,10 @@ export default function Process() {
           </p>
         </div>
 
-        <div className="process-grid">
+        <div className={styles.processGrid}>
           {steps.map((step) => (
-            <div className="process-step" key={step.number}>
-              <span className="process-number">{step.number}</span>
+            <div className={styles.processStep} key={step.number}>
+              <span className={styles.processNumber}>{step.number}</span>
               <h3>{step.title}</h3>
               <p>{step.text}</p>
             </div>

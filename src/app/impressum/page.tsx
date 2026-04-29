@@ -4,7 +4,7 @@ export default function ImpressumPage() {
       <div className="container legal">
         <h1>Impressum</h1>
 
-        <h2>Angaben gemäß § 5 TMG</h2>
+        <h2>Angaben gemäß § 5 DDG</h2>
 
         <p>
           Max Ebbing<br />
@@ -15,10 +15,10 @@ export default function ImpressumPage() {
 
         <h2>Kontakt</h2>
         <p>
-          E-Mail: max.k.ebbing@gmail.com
+          E-Mail: <a href="mailto:max.k.ebbing@gmail.com">max.k.ebbing@gmail.com</a>
         </p>
 
-        <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+        <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
         <p>
           Max Ebbing<br />
           [Adresse wie oben]
@@ -26,12 +26,8 @@ export default function ImpressumPage() {
 
         <h2>Haftung für Inhalte</h2>
         <p>
-          Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf
-          diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8
-          bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet,
-          übermittelte oder gespeicherte fremde Informationen zu überwachen oder
-          nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
-          hinweisen.
+          Als Diensteanbieter bin ich gemäß § 7 DDG für eigene Inhalte auf
+          diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
         </p>
 
         <h2>Haftung für Links</h2>

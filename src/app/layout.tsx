@@ -1,5 +1,5 @@
 import "./globals.css";
-import CookieConsent from "@/components/CookieConsent";
+import CookieConsent from "@/components/Cookie";
 
 export const metadata = {
   title: "Mehr Anfragen durch bessere Websites",

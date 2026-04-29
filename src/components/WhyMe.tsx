@@ -1,3 +1,5 @@
+import styles from "./css/WhyMe.module.css";
+
 const points = [
   "Direkter Kontakt ohne Zwischenebenen",
   "Schnelle Umsetzung ohne unnötige Verzögerungen",
@@ -7,9 +9,9 @@ const points = [
 
 export default function Why() {
   return (
-    <section className="section section-why" id="warum-ich">
-      <div className="container why-layout">
-        <div className="why-left">
+    <section className="section snap-section" id="warum-ich">
+      <div className={`container ${styles.whyLayout}`}>
+        <div className={styles.whyLeft}>
           <p className="section-eyebrow">Warum mit mir</p>
 
           <h2>
@@ -23,10 +25,10 @@ export default function Why() {
           </p>
         </div>
 
-        <div className="why-right">
+        <div className={styles.whyRight}>
           {points.map((point) => (
-            <div className="why-item" key={point}>
-              <span className="why-dot" />
+            <div className={styles.whyItem} key={point}>
+              <span className={styles.whyDot} />
               <p>{point}</p>
             </div>
           ))}

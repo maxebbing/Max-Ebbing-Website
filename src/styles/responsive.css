@@ -1,0 +1,22 @@
+/* Responsive */
+
+@media (max-width: 900px) {
+  .section-head,
+  .why-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .section-heading-simple {
+    margin-bottom: 36px;
+  }
+
+}

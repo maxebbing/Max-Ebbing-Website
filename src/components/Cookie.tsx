@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Script from "next/script";
+import styles from "./css/Cookie.module.css";
 
 const GA_ID = "G-RT7C4EPBS6";
 const CLARITY_ID = "wgdwan2m2w";
@@ -31,7 +32,6 @@ export default function CookieConsent() {
     <>
       {consent === "accepted" && (
         <>
-          {/* Microsoft Clarity */}
           <Script id="microsoft-clarity" strategy="afterInteractive">
             {`
               (function(c,l,a,r,i,t,y){
@@ -42,11 +42,11 @@ export default function CookieConsent() {
             `}
           </Script>
 
-          {/* Google Analytics */}
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
             strategy="afterInteractive"
           />
+
           <Script id="ga" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
@@ -59,20 +59,20 @@ export default function CookieConsent() {
       )}
 
       {consent === null && (
-        <div className="cookie-banner">
-          <div className="cookie-banner-content">
+        <div className={styles.cookieBanner}>
+          <div className={styles.cookieBannerContent}>
             <div>
-              <p className="cookie-title">Cookies & Analyse</p>
-              <p className="cookie-text">
+              <p className={styles.cookieTitle}>Cookies & Analyse</p>
+              <p className={styles.cookieText}>
                 Diese Website nutzt Google Analytics und Microsoft Clarity, um
                 die Nutzung der Website zu analysieren und sie zu verbessern.
               </p>
             </div>
 
-            <div className="cookie-actions">
+            <div className={styles.cookieActions}>
               <button
                 type="button"
-                className="cookie-button secondary"
+                className={`${styles.cookieButton} ${styles.secondary}`}
                 onClick={rejectCookies}
               >
                 Ablehnen
@@ -80,7 +80,7 @@ export default function CookieConsent() {
 
               <button
                 type="button"
-                className="cookie-button primary"
+                className={`${styles.cookieButton} ${styles.primary}`}
                 onClick={acceptCookies}
               >
                 Akzeptieren

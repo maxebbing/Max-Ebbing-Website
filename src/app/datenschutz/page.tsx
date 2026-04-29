@@ -23,7 +23,7 @@ export default function DatenschutzPage() {
           <br />
           10115 Berlin
           <br />
-          E-Mail: max.k.ebbing@gmail.com
+          E-Mail: <a href="mailto:max.k.ebbing@gmail.com">max.k.ebbing@gmail.com</a>
         </p>
 
         <h2>3. Hosting</h2>

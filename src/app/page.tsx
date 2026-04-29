@@ -1,17 +1,18 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Hero from "@/components/sections/Hero";
-import Problem from "@/components/sections/Problem";
-import Services from "@/components/sections/Services";
-import Process from "@/components/sections/Process";
-import Why from "@/components/sections/WhyMe";
-import CTA from "@/components/sections/CTA";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Problem from "@/components/Problem";
+import Services from "@/components/Services";
+import Process from "@/components/Process";
+import Why from "@/components/WhyMe";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main>
+
+      <main className="page-snap">
         <Hero />
         <Problem />
         <Services />
@@ -19,7 +20,6 @@ export default function HomePage() {
         <Why />
         <CTA />
       </main>
-      <Footer />
     </>
   );
 }

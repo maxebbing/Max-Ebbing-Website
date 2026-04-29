@@ -1,3 +1,5 @@
+import styles from "./css/Services.module.css";
+
 const services = [
   {
     title: "Webdesign",
@@ -19,9 +21,9 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="section section-services" id="services">
-      <div className="container services-layout">
-        <div className="services-left">
+    <section className="section snap-section" id="services">
+      <div className={`container ${styles.servicesLayout}`}>
+        <div className={styles.servicesLeft}>
           <p className="section-eyebrow">Leistungen</p>
           <h2>Alles, was eine starke Website wirklich braucht.</h2>
           <p className="section-copy">
@@ -30,9 +32,9 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="services-right">
+        <div className={styles.servicesRight}>
           {services.map((service) => (
-            <div className="service-row" key={service.title}>
+            <div className={styles.serviceRow} key={service.title}>
               <h3>{service.title}</h3>
               <p>{service.text}</p>
             </div>
