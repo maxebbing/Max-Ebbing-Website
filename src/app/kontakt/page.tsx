@@ -34,15 +34,15 @@ export default function KontaktPage() {
   }
 
   return (
-    <main className="section">
+    <main className="section contact-page">
       <div className="container contact-layout">
         <div className="contact-left">
           <p className="section-eyebrow">Kontakt</p>
           <h1>Projekt anfragen</h1>
 
           <p className="section-copy">
-            Schreib mir kurz, worum es bei deinem Projekt geht. Ich melde mich
-            schnellstmöglich zurück und wir klären die nächsten Schritte.
+            Schreib kurz, worum es geht. Ich melde mich zurück und wir klären, ob
+            eine Zusammenarbeit sinnvoll ist.
           </p>
         </div>
 
@@ -71,8 +71,7 @@ export default function KontaktPage() {
 
           {status === "error" && (
             <p className="form-error">
-              Die Nachricht konnte nicht gesendet werden. Bitte versuche es
-              später erneut.
+              Die Nachricht konnte nicht gesendet werden.
             </p>
           )}
         </form>

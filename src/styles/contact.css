@@ -1,22 +1,22 @@
-/* Contact Layout */
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: start;
+  gap: 72px;
+  align-items: center;
 }
-
-/* Left */
 
 .contact-left h1 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.05;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.02;
   letter-spacing: -0.03em;
 }
-
-/* Form */
 
 .contact-form {
   display: flex;
@@ -28,10 +28,9 @@
 .contact-form textarea {
   width: 100%;
   padding: 14px 16px;
-  border-radius: 10px;
   border: 1px solid var(--border);
-  font-size: 1rem;
-  font-family: inherit;
+  border-radius: 10px;
+  font: inherit;
 }
 
 .contact-form input:focus,
@@ -48,8 +47,6 @@
   margin-top: 8px;
 }
 
-/* States */
-
 .form-success {
   margin: 0;
   color: #15803d;
@@ -62,16 +59,17 @@
   line-height: 1.6;
 }
 
-/* Disabled Button */
-
 .contact-form button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
-/* Responsive */
-
 @media (max-width: 900px) {
+  .contact-page {
+    min-height: auto;
+    display: block;
+  }
+
   .contact-layout {
     grid-template-columns: 1fr;
     gap: 40px;
