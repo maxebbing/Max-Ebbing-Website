@@ -4,9 +4,23 @@ import CookieConsent from "@/components/Cookie";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://maxebbing.de"),
-  title: "Mehr Anfragen durch bessere Websites",
+
+  title: "Max Ebbing",
   description:
-    "Ich entwickle schnelle, klare Websites für lokale Unternehmen, die gezielt darauf ausgelegt sind, mehr Anfragen zu generieren.",
+    "Ich entwickle schnelle Websites für Unternehmen mit Fokus auf Performance und Qualität.",
+
+  manifest: "/site.webmanifest",
+
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+
+  appleWebApp: {
+    title: "Max Ebbing",
+    capable: true,
+    statusBarStyle: "default",
+  },
 };
 
 export default function RootLayout({
