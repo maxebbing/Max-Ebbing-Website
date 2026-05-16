@@ -5,7 +5,7 @@ import CookieConsent from "@/components/Cookie";
 export const metadata: Metadata = {
   metadataBase: new URL("https://maxebbing.de"),
 
-  title: "Max Ebbing",
+  title: "Max Ebbing - Moderne Websites für Unternehmen in Berlin",
   description:
     "Ich entwickle schnelle Websites für Unternehmen mit Fokus auf Performance und Qualität.",
 
