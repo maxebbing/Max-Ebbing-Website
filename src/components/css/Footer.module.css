@@ -1,5 +1,5 @@
 .siteFooter {
-  padding: 32px;
+  padding: 28px 0;
   border-top: 1px solid var(--border);
 }
 
@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -16,15 +15,27 @@
   color: var(--muted);
 }
 
+.socialLinks,
 .footerLinks {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
+.socialLinks a,
 .footerLinks a {
   color: var(--muted);
+  transition: color 0.2s ease;
 }
 
+.socialLinks a:hover,
 .footerLinks a:hover {
   color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .footerInner {
+    flex-direction: column;
+    text-align: center;
+  }
 }
