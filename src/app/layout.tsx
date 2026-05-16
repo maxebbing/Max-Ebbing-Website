@@ -9,6 +9,27 @@ export const metadata: Metadata = {
   description:
     "Ich entwickle schnelle Websites für Unternehmen mit Fokus auf Performance und Qualität.",
 
+  /*
+  openGraph: {
+      title: "Max Ebbing",
+      description:
+        "Ich entwickle schnelle Websites für Unternehmen mit Fokus auf Performance und Qualität.",
+      url: "https://maxebbing.de",
+      siteName: "Max Ebbing",
+
+      images: [
+        {
+          url: "/opengraph-image.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+
+      locale: "de_DE",
+      type: "website",
+    },
+    */
+
   manifest: "/site.webmanifest",
 
   icons: {
