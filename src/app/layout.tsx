@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import CookieConsent from "@/components/Cookie";
+
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://maxebbing.de"),
@@ -65,6 +67,7 @@ export default function RootLayout({
         {children}
         <CookieConsent />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
