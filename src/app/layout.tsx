@@ -6,32 +6,31 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
+  title: "Max Ebbing | Websites für Unternehmen",
+  description: "Ich entwickle Websites für Unternehmen, die mehr leisten als gut auszusehen. Durchdacht, hochwertig und ausgereift.",
   metadataBase: new URL("https://maxebbing.de"),
+  alternates: {
+    canonical: "https://maxebbing.de",
+  },
 
-  title: "Max Ebbing - Moderne Websites für Unternehmen in Berlin",
-  description:
-    "Ich entwickle schnelle Websites für Unternehmen mit Fokus auf Performance und Qualität.",
 
-  /*
   openGraph: {
-      title: "Max Ebbing",
-      description:
-        "Ich entwickle schnelle Websites für Unternehmen mit Fokus auf Performance und Qualität.",
-      url: "https://maxebbing.de",
-      siteName: "Max Ebbing",
+    title: "Max Ebbing | Websites für Unternehmen",
+    description: "Ich entwickle Websites für Unternehmen, die mehr leisten als gut auszusehen. Durchdacht, hochwertig und ausgereift.",
+    url: "https://maxebbing.de",
+    siteName: "Max Ebbing",
 
-      images: [
-        {
-          url: "/opengraph-image.png",
-          width: 1200,
-          height: 630,
-        },
-      ],
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
 
-      locale: "de_DE",
-      type: "website",
-    },
-    */
+    locale: "de_DE",
+    type: "website",
+  },
 
   manifest: "/site.webmanifest",
 
@@ -53,6 +52,13 @@ export const metadata: Metadata = {
     title: "Max Ebbing",
     capable: true,
     statusBarStyle: "default",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Max Ebbing | Websites für Unternehmen",
+    description: "Ich entwickle Websites für Unternehmen, die mehr leisten als gut auszusehen. Durchdacht, hochwertig und ausgereift.",
+    images: ["/opengraph-image.png"],
   },
 };
 

@@ -5,14 +5,14 @@ export default function Hero() {
     <section className={`${styles.hero} snap-section`} id="hero">
       <div className={`container ${styles.heroGrid}`}>
         <div className={styles.heroContent}>
-          <p className={styles.heroEyebrow}>Websites für lokale Unternehmen</p>
+          <p className={styles.heroEyebrow}>Websites für Unternehmen</p>
 
-          <h1>Mehr Anfragen durch bessere Websites.</h1>
+          <h1>Viele Websites wirken professionell, bis man sie benutzt.</h1>
 
           <p className={styles.heroText}>
-            Ich entwickle schnelle, klare Websites für lokale Unternehmen, die
-            gezielt darauf ausgelegt sind, Besucher in Kundenanfragen zu
-            verwandeln – ohne lange Wartezeiten.
+            Ich entwickle Websites für Unternehmen, die mehr leisten als gut auszusehen. 
+            <br /> 
+            Durchdacht. Hochwertig. Ausgereift.
           </p>
 
           <div className={styles.heroActions}>

@@ -5,7 +5,6 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Why from "@/components/WhyMe";
 import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
