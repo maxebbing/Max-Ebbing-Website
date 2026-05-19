@@ -13,25 +13,6 @@ export const metadata: Metadata = {
     canonical: "https://maxebbing.de",
   },
 
-
-  openGraph: {
-    title: "Max Ebbing | Websites für Unternehmen",
-    description: "Ich entwickle Websites für Unternehmen, die mehr leisten als gut auszusehen. Durchdacht, hochwertig und ausgereift.",
-    url: "https://maxebbing.de",
-    siteName: "Max Ebbing",
-
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-
-    locale: "de_DE",
-    type: "website",
-  },
-
   manifest: "/site.webmanifest",
 
   icons: {
@@ -58,7 +39,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Max Ebbing | Websites für Unternehmen",
     description: "Ich entwickle Websites für Unternehmen, die mehr leisten als gut auszusehen. Durchdacht, hochwertig und ausgereift.",
-    images: ["/opengraph-image.png"],
   },
 };
 
